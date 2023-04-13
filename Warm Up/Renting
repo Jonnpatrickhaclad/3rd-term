@@ -1,0 +1,58 @@
+
+import java.util.Scanner;
+
+public class Rent{
+
+    static String Author_name [] = {"Cary B. Shelly","Corinne Hoisington","Rosouro E. Manuel"};
+    static String Book_name [] = {"System Anaysis","Android Application","Programming Concepts and Logic Formulation"};
+    static int Book_quantity [] = { 2, 3, 4 };
+
+    public static void main(String[] args) {
+        int index = 0;
+        Scanner scan = new Scanner(System.in);
+
+
+        System.out.println("ELECTRONIC BOOK RENTAL SYSTEM");
+        System.out.println("*****************************");
+        System.out.println("0 " + Author_name[0] + "," + Book_name[0]);
+        System.out.println("1 " + Author_name[1] + "," + Book_name[1]);
+        System.out.println("1 " + Author_name[2] + "," + Book_name[2]);
+
+        int Renting = scan.nextInt();
+
+
+        try {
+
+             int available = Book_quantity[Renting];
+            // String author = Author_name[index];
+            // String book = Book_name[index];
+            
+            if (Renting == 0){
+                Book_quantity[Renting] = available -1;
+                System.out.println("You rented " + Author_name[Renting] + "," + Book_name[Renting] + ".");
+                if(Book_quantity[Renting] == index){
+                    System.out.println("No more books to rent.");
+                    return;
+                }
+
+            } else if (Renting == 1){
+                Book_quantity[Renting] = available -1;
+                System.out.println("You rented " + Author_name[Renting] + "," + Book_name[Renting] + ".");
+                if(Book_quantity[Renting] == index){
+                    System.out.println("No more books to rent.");
+                    return;
+                }   
+            } else{
+                System.out.println("There is an error please try again");
+                return;
+            }
+
+        } 
+        catch (Exception e) {
+            
+        }
+    
+    }
+
+    
+}
