@@ -1,0 +1,19 @@
+//SuperClass or The Parent Class
+public class PlaneModel {
+    //name of the Plane and Wingspan method With String Attributes
+     void PlaneModel() {
+        
+        String Plane = "A-10 Warthog";
+        String Wingspan = "56 Feet 6 Inches";
+        System.out.println("Plane1: " + Plane);
+        System.out.println("Wingspan: " + Wingspan);
+
+     }
+    //The Fly Method
+     void Fly() {
+
+        System.out.println("The Plane can fly and the speed can go up to 300 MPH");
+     }
+
+}
+
