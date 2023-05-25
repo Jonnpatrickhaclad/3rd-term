@@ -1,0 +1,21 @@
+//The SubClass or the ChildClass
+//using the extends method, the SubClass(PlaneModel2) can Ihertit the Parent Class(PlaneModel)
+public class PlaneModel2 extends PlaneModel {
+
+    //Using Override to Change the Method and Attributes of the Iherited Parent Class(PlaneMpdel)
+    @Override void PlaneModel() {
+
+        String Plane = "U-2 Spy Plane";
+        String Wingspan = "105 feet";
+        System.out.println("Plane2: " + Plane);
+        System.out.println("Wingspan: " + Wingspan);
+        
+    }
+
+    //Using Override to Change the print methods' string value
+    @Override void Fly() {
+
+        System.out.println("The Plane can fly and the speed can go up to 430 MPH");
+     }
+    
+}
