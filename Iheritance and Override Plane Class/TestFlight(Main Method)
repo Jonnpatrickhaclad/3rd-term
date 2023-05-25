@@ -1,0 +1,20 @@
+//Main Class testFlight, the name itself is a method used the plane engineers to test the Aircrafts capabilities
+public class TestFlight {
+
+    //Main method
+    public static void main (String [] args) {
+        //The shorten variables of the two classes, used to easily call the class' methods and attributes 
+        PlaneModel Warthog = new PlaneModel();
+        PlaneModel2 SpyPlane = new PlaneModel2();
+
+        //To call a class' method first call the class variable and use (.) then the name of the method
+        Warthog.PlaneModel();
+        Warthog.Fly();
+        //Using the println method to create space between to different classes that way it's easy to read the program's output
+        System.out.println();
+        System.out.println("*********************************************************");
+        SpyPlane.PlaneModel();
+        SpyPlane.Fly();
+    }
+    
+}
