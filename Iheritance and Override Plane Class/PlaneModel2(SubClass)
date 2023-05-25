@@ -2,7 +2,7 @@
 //using the extends method, the SubClass(PlaneModel2) can Ihertit the Parent Class(PlaneModel)
 public class PlaneModel2 extends PlaneModel {
 
-    //Using Override to Change the Method and Attributes of the Iherited Parent Class(PlaneMpdel)
+    //Using Override to Change the Method and Attributes of the Iherited Parent Class(PlaneModel)
     @Override void PlaneModel() {
 
         String Plane = "U-2 Spy Plane";
